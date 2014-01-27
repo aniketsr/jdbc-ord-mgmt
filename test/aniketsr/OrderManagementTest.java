@@ -129,4 +129,15 @@ public class OrderManagementTest {
 
         assertEquals(1, affectedRows);
     }
+
+    @Test
+    public void test_delete_fails_when_condition_is_false() throws Exception {
+        String query1 = "insert into DDL values(1,\"notebook\",20)";
+        String query2 = "delete from DDL where id = 2";
+
+        statement.executeUpdate(query1);
+        int affectedRows = statement.executeUpdate(query2);
+
+        assertEquals(0,affectedRows);
+    }
 }
