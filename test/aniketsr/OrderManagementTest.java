@@ -78,6 +78,7 @@ public class OrderManagementTest {
             assertEquals("notebook", resultSet.getString(2));
             assertEquals(20, resultSet.getInt(3));
         }
+        resultSet.close();
     }
 
     @Test
@@ -96,6 +97,7 @@ public class OrderManagementTest {
             assertEquals("notebook", resultSet.getString(2));
             assertEquals(20, resultSet.getInt(3));
         }
+        resultSet.close();
     }
 
     @Test
@@ -114,6 +116,7 @@ public class OrderManagementTest {
             assertEquals("pen", resultSet.getString(2));
             assertEquals(20, resultSet.getInt(3));
         }
+        resultSet.close();
     }
 
     @Test
