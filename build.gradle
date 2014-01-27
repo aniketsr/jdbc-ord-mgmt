@@ -7,6 +7,7 @@ version = "0.1"
 repositories { mavenCentral() }
 
 dependencies {
+    compile 'org.jumpmind.symmetric.jdbc:mariadb-java-client:1.1.1'
     testCompile 'junit:junit:4.10'
 }
 
